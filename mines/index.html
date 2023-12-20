@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EX Calibur</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header style="grid-area: header;">
+      <h1></h1>
+    </header>
+  
+    <main style="grid-area: main;">
+      <div id="tile-box" style="grid-area: tile-box;">
+      </div>
+      <nav id="setup" style="grid-area: setup;">
+        <div class="input-container">
+          <input id="input-modifier" type="number" placeholder="Modifier" max="24" min="1">
+          <button id="start-button" onclick="renderGame()">Start</button>
+          <button id="cashout-button" onclick="win()">Cashout</button>
+
+          <p id="output-message">
+            Waiting for your mistake
+          </p>
+        </div>
+      </nav>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
